@@ -479,3 +479,76 @@ mape = 100 * (errors / test_labels)
 accuracy = 100 - np.mean(mape)
 print('Accuracy:', round(accuracy, 2), '%.')
 
+
+# In[140]:
+
+
+df_nba_elo_modified_bkp=df_nba_elo_modified_2
+
+
+# In[141]:
+
+
+# Use numpy to convert to arrays
+import numpy as np
+# Labels are the values we want to predict
+labels = np.array(df_nba_elo_modified_2['score2'])
+# Remove the labels from the features
+# axis 1 refers to the columns
+df_nba_elo_modified_2= df_nba_elo_modified_2.drop('score2', axis = 1)
+# Saving feature names for later use
+feature_list2 = list(df_nba_elo_modified_2.columns)
+# Convert to numpy array
+df_nba_elo_modified_2 = np.array(df_nba_elo_modified_2)
+
+
+# In[143]:
+
+
+# Using Skicit-learn to split data into training and testing sets
+from sklearn.model_selection import train_test_split
+# Split the data into training and testing sets
+train_df_nba_elo_modified2, test_df_nba_elo_modified2, train_labels2, test_labels2 = train_test_split(df_nba_elo_modified_2, labels, test_size = 0.25, random_state = 42)
+
+
+# In[144]:
+
+
+print('Training Features Shape:', train_df_nba_elo_modified2.shape)
+print('Training Labels Shape:', train_labels2.shape)
+print('Testing Features Shape:', test_df_nba_elo_modified2.shape)
+print('Testing Labels Shape:', test_labels2.shape)
+
+
+# In[145]:
+
+
+# Import the model we are using
+from sklearn.ensemble import RandomForestRegressor
+# Instantiate model with 1000 decision trees
+rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
+# Train the model on training data
+rf.fit(train_df_nba_elo_modified2, train_labels2);
+
+
+# In[150]:
+
+
+# Use the forest's predict method on the test data
+predictions = rf.predict(test_df_nba_elo_modified2)
+# Calculate the absolute errors
+errors = abs(predictions - test_labels2)
+# Print out the mean absolute error (mae)
+print('Mean Absolute Error:', round(np.mean(errors), 2), 'degrees.')
+errors
+
+
+# In[152]:
+
+
+# Calculate mean absolute percentage error (MAPE)
+mape = 100 * (errors / test_labels)
+# Calculate and display accuracy
+accuracy = 100 - np.mean(mape)
+print('Accuracy:', round(accuracy, 2), '%.')
+
