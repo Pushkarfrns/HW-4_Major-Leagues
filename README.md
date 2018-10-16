@@ -6,33 +6,47 @@ Notebook: LabProject#4_Major_Leagues.ipynb Purpose: Deduced Additional Informati
 * Loaded the nba_elo.csv in a dataframes.
 
 * Additional Information #1: To find total number of matches played each day/ or total days on which match was held/played.
-  Converted the above new data into a new data frame (df_nba_elo_No_of_matches_each_day).
-  Saved the resulted dataframe in a csv (AdditionalInfo#1_Count_Of_Match_Played_dateWise.csv)
+
+Converted the above new data into a new data frame (df_nba_elo_No_of_matches_each_day).
+
+Saved the resulted dataframe in a csv (AdditionalInfo#1_Count_Of_Match_Played_dateWise.csv)
 
 * Additional Information #2: To find total number of matches played in each season.
-  Converted the above new data into a dataframe (df_nba_elo_Match_per_season).
-  Saved the resulted dataframe in a csv (AdditionalInfo#2_SeasonWise_MatchCount.csv).
 
-Additional Information #3: To find the mean score for all the team1.
+Converted the above new data into a dataframe (df_nba_elo_Match_per_season).
+
+Saved the resulted dataframe in a csv (AdditionalInfo#2_SeasonWise_MatchCount.csv).
+
+* Additional Information #3: To find the mean score for all the team1.
+
 Converted the above new data into a dataframe (df_nba_elo_MeanScore_Team1)
+
 Saved the resulted dataframe in a csv (AdditionalInfo#3_MeanScore_for_AllTeam1.csv)
 
-Additional Information #4: To find the mean score for all the team2.
+* Additional Information #4: To find the mean score for all the team2.
+
 Converted the above new data into a dataframe (df_nba_elo_MeanScore_Team2)
+
 Saved the resulted dataframe in a csv (AdditionalInfo#4_MeanScore_for_AllTeam2.csv)
 
-Additional Information #5: Created 3 new columns namely year, month and date for each of the match played.
+* Additional Information #5: Created 3 new columns namely year, month and date for each of the match played.
 
-Additional Information #6: To find for each year how many matches were played. 
+* Additional Information #6: To find for each year how many matches were played. 
+
 Converted the above new data into a dataframe (df_nba_elo_newYEAR )
+
 Saved the resulted dataframe in a csv (AdditionalInfo#6_NumberOfMatchesPlayedYearWise.csv)
 
-Additional Information #7: To find for each month how many matches were played. 
+* Additional Information #7: To find for each month how many matches were played. 
+
 Converted the above new data into a dataframe (df_nba_elo_newMonth )
+
 Saved the resulted dataframe in a csv (AdditionalInfo#7_NumberOfMatchesPlayedMonthWise.csv)
 
-Additional Information #8: To find for each month how many matches were played. 
+* Additional Information #8: To find for each month how many matches were played. 
+
 Converted the above new data into a dataframe (df_nba_elo_newDate )
+
 Saved the resulted dataframe in a csv (AdditionalInfo#8_NumberOfMatchesPlayedDateWise.csv)
 
 My findings -->
