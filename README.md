@@ -3,15 +3,15 @@ EECS 731:Assignment 4: HW#4_Major Leagues
 
 Notebook: LabProject#4_Major_Leagues.ipynb Purpose: Deduced Additional Information and random forest regression analysis to find the score for each team.
 
-Loaded the nba_elo.csv in a dataframes.
+* Loaded the nba_elo.csv in a dataframes.
 
-Additional Information #1: To find total number of matches played each day/ or total days on which match was held/played.
-Converted the above new data into a new data frame (df_nba_elo_No_of_matches_each_day).
-Saved the resulted dataframe in a csv (AdditionalInfo#1_Count_Of_Match_Played_dateWise.csv)
+* Additional Information #1: To find total number of matches played each day/ or total days on which match was held/played.
+  Converted the above new data into a new data frame (df_nba_elo_No_of_matches_each_day).
+  Saved the resulted dataframe in a csv (AdditionalInfo#1_Count_Of_Match_Played_dateWise.csv)
 
-Additional Information #2: To find total number of matches played in each season.
-Converted the above new data into a dataframe (df_nba_elo_Match_per_season)
-Saved the resulted dataframe in a csv (AdditionalInfo#2_SeasonWise_MatchCount.csv)
+* Additional Information #2: To find total number of matches played in each season.
+  Converted the above new data into a dataframe (df_nba_elo_Match_per_season).
+  Saved the resulted dataframe in a csv (AdditionalInfo#2_SeasonWise_MatchCount.csv).
 
 Additional Information #3: To find the mean score for all the team1.
 Converted the above new data into a dataframe (df_nba_elo_MeanScore_Team1)
